@@ -1,0 +1,3 @@
+DENY {
+	(java.util.PropertyPermission "java.home" "read")
+}

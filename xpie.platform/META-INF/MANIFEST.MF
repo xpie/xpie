@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: XPie java application platform
+JPA-PersistenceUnits: cn.eiap.portal
+Bundle-SymbolicName: org.xpie.platform
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.xpie.platform.Activator
+Bundle-Vendor: XPie Team
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.security.auth,
+ javax.security.auth.callback,
+ javax.security.auth.kerberos,
+ javax.security.auth.login,
+ javax.security.auth.spi,
+ javax.security.auth.x500,
+ javax.servlet;version="2.6.0",
+ javax.servlet.http;version="2.6.0",
+ javax.servlet.jsp;version="2.2.0",
+ org.eclipse.equinox.jsp.jasper;version="1.0.0",
+ org.osgi.framework;version="1.7.0",
+ org.osgi.service.http;version="1.2.1",
+ org.xml.sax,
+ org.xml.sax.ext,
+ org.xml.sax.helpers,
+ org.xpie.platform.jaas
+Export-Package: org.xpie.platform;version="1.0.0"
+DynamicImport-Package: cn.eiap.*,org.xpie.*
+Require-Bundle: org.apache.jasper.glassfish;bundle-version="2.2.2",
+ javax.servlet.jsp;bundle-version="2.2.0",
+ com.sun.el;bundle-version="2.2.0"
+Bundle-ClassPath: lib/javax.servlet.jsp.jstl-1.2.1.jar,
+ .

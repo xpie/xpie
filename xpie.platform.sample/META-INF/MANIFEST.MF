@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sample
+Meta-Persistence: META-INF/persistence.xml
+JPA-PersistenceUnits: org.xpie.platform.sample
+Bundle-SymbolicName: org.xpie.platform.sample;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.xpie.platform.sample.SampleActivator
+Bundle-Vendor: XPie Team
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.xpie.platform;bundle-version="1.0.0"
+Export-Package: org.xpie.platform.sample;version="1.0.0",
+ org.xpie.platform.sample.controllers;version="1.0.0"
+Import-Package: com.mysql.jdbc,
+ com.sun.el;version="2.2.0",
+ javax.persistence;version="2.0.4",
+ javax.servlet;version="2.6.0",
+ javax.servlet.http;version="2.6.0",
+ org.eclipse.equinox.jsp.jasper;version="1.0.0",
+ org.osgi.framework;version="1.7.0",
+ org.osgi.service.http;version="1.2.1",
+ org.osgi.util.tracker;version="1.5.1"
+Bundle-ClassPath: .
+

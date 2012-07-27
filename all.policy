@@ -1,0 +1,11 @@
+/* AUTOMATICALLY GENERATED ON Sun Jul 22 15:06:37 CST 2012*/
+/* DO NOT EDIT */
+
+grant codeBase "file:D:/eclipse/osgi/equinox-SDK-3.8/plugins/*"{
+  permission java.security.AllPermission "*";
+};
+
+grant      principal org.xpie.platform.jaas.XPiePrincipal "aaa" {
+  permission org.xpie.platform.ResourcePermission "order";
+};
+

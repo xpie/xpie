@@ -1,0 +1,5 @@
+
+grant Principal org.xpie.platform.jaas.XPiePrincipal "aaa" {
+	permission org.xpie.platform.ResourcePermission "order";
+	permission java.util.PropertyPermission "java.home", "read";
+};
